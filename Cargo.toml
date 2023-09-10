@@ -1,0 +1,17 @@
+[package]
+name = "clap_study"
+authors = ["wangzhifei <wangzhifeixiang@qq.com>"]
+version = "0.1.0"
+edition = "2021"
+description = "学习使用Rust命令行解析器crate clap"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[profile.release]
+lto = true
+opt-level = 'z'
+codegen-units = 1
+[dependencies]
+clap = { version = "4.4.2", features = ["derive"] }
+
+
+
